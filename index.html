@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta name = "viewport" content="width=device-width,initial-scale=1.0"/>
+        <meta name="title" property="og:title" content="Marije van der Brugge - Software Testing">
+        <meta name="author" content="Marije van der Brugge">
+        <meta name="description" content="Portfolio website designed by Marije van der Brugge inspired by other websites and with the support of a friend. Technology used HTML and CSS. A work in progress as I continue to learn more and more :-) Images are from  Unsplashed." >
+        <meta name="image" property="og:image" content="img/software.jpg">
+        <meta property="og:image:width" content="400" />
+        <meta property="og:image:height" content="300" />
+
+        <meta property="og:type" content="website">
+    
+        <title>Brycg - Software Tester</title>
+
+<!-- Add stylesheet -->
+<link rel="stylesheet" href="styles/styles.css"/>
+    
+<!-- Add fontawesoe kit -->
+<script    src="https://kit.fontawesome.com/1887cacc1a.js" crossorigin="anonymous">
+</script>
+        
+<!-- Add NavMenu javascript -->
+<script
+src="javascript/NavMenu.js">
+</script>
+   
+</head>
+    
+
+<body>
+    
+<!-- The overlay -->
+<div id="myNav" class="overlay" >
+
+<!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+<!-- Overlay content -->
+    <div class="overlay-content">
+        <a href="#section-about"
+           onclick="closeNav()">About</a>
+        <a href="#section-projects"
+           onclick="closeNav()">Projects</a>
+        <a href="#footer"
+           onclick="closeNav()">Contact</a>
+    </div>
+</div>
+
+<!-- Use any element to open/show the overlay navigation menu -->
+<div class="openbtn">
+    <span onclick="openNav()">&#9776</span>
+</div>
+
+<!-- header -->
+<header class="header">         
+     <div class="header_text-box">       
+            <h1 class="heading-primary">
+                <span class="heading-primary_main">Marije van der Brugge</span>
+                <span class="heading-primary_sub">Test Analyst</span>
+            </h1>
+            <a data-scroll href="#section-about" class="btn btn-white">Find Out More</a>
+     </div>
+</header>
+<main>    
+
+<!-- section about -->
+    <section class="section-about" id="section-about">
+        <div class="u-center-text u-margin-bottom-big">
+            <h2 class="heading_secondary">About 
+                <span class=heading-secondary_bold>Me
+                </span>
+            </h2>
+        </div>
+         <div class="row">
+             <div class=column_summary>
+                <div class="column_left">
+                    <h3 class="heading_tertiary u-margin-bottom-small">
+                        I'm a Test Analyst, who has an keen interest in test automation.
+                    </h3>
+                    <p class="profile_summary">
+                    My name is Marije originally from The Netherlands, now living in Brisbane.
+                    <br><br> 
+                    I currently work as a Test Analyst. I have experience in various domains during my career, including government, insurance, mining and banking.<br><br> 
+                    I've had exposure to test automation on a project at the Department of Agriculture and Fisheries where a basic regression test suite was delivered to reduce the manual testing effort. This piqued my interest to learn more about "Automation in Test" a term used by Richard Bradshaw. Not just the coding side of things but also the use of automation, and how it can support testing efforts.  
+                    <br><br>
+                    People like Richard Bradshaw, Angie Jones and Bas Dijkstra are people I follow. They've done great work in improving the view and expectations of test automation. 
+                    <br><br> 
+                    As a team player, I work closely with product managers, designers and software engineers to ensure that we as a team are delivering an unique experience to users.<br>I believe quality is something that should be checked throughout the process, not just at the end.<br><br>
+                    I am always happy to assist and will take ownership of problems, actively seeking solutions until an agreed resolution has been achieved.<br><br> I can tell you more about me when we meet for coffee!  <i class="fa-solid fa-mug-saucer"></i>
+                    </p>
+                    <a href="https://drive.google.com/file/d/19bZR19zVwSaYcRO2MFvqb5GjemZzf7lh/view?usp=sharing" target="_blank" class="btn-download" >Download My CV</a>
+                    
+                </div>
+                <div class="column_right">
+                    <div class="image">
+                    <img src="img/profile-pic.png">
+                    </div>
+                </div>
+    </div>
+     </div>   
+           </section>
+ 
+<!-- section projects -->
+<section class="section-projects" id="section-projects">
+        <div class="u-center-text u-margin-bottom-big">
+            <h2 class="heading_secondary">
+                        Projects
+            </h2>
+        </div> 
+
+<div class="row">
+    <div class="column">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                    <h2 class=front_card_title>Outfit</h2>
+                    <p class="front_card_sub_title">Sept 2021 - Present</p>
+                    <p class="front_card_text">Brand management, templating and creative automation platform</p>
+                    </div>
+                    <div class="flip-card-back">
+                    <h3 class=back_card_title>Outfit</h3>
+                    <p class=back_card_sub_title></p>
+                    <div class="card_details">
+                        <ul>
+                            <li>QA process for clients on-brand template delivery</li>
+                            <li>Triage process for clients on-brand template delivery</li>
+                            <li>Scrum Boards</li>
+                            <li>Testing on-brand templates</li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+<div class="column">
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+            <h2 class=front_card_title>DAF</h2>
+            <p class="front_card_sub_title">Jun 2017 - Sept 2021</p>
+            <p class="front_card_text">Continues delivery of changes to Fire Ant Management System (FAMS) to assist the National Red Imported Fire Ant Eradication Program.</p>
+            </div>
+            <div class="flip-card-back">
+            <h3 class=back_card_title>Project</h3>
+            <p class=back_card_sub_title>FAMS</p>
+            <div class="card_details">
+                <ul>
+                    <li>System / Regression Testing</li>
+                    <li>Mobile Solution</li>
+                    <li>Automated Regression Test Suite</li>
+                    <li>Scrum Boards</li>
+                    <li>Release Notes</li>
+                    <li>Support UAT</li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+  
+<div class="column">
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+            <h2 class=front_card_title>SPARQ</h2>
+            <p class="front_card_sub_title">Mar 2017 - May 2017</p>  
+            <p class="front_card_text">Asset Failure Reporting solution providing Energex with a platform that will allow it to capture, report and analyse in service and conditional failures of assets.</p>
+            </div>
+            <div class="flip-card-back">
+            <h3 class=back_card_title>Project</h3>
+            <p class=back_card_sub_title>Asset Failure Reporting</p>
+            <div class="card_details">
+                <ul>
+                    <li>Test Plan sign-off</li>
+                    <li>Test management</li>
+                    <li>Defect management</li>
+                    <li>SIT Summary Reports</li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+ <div class="u-center-text u-margin-top-hug">
+    <a href="https://github.com/marijeb" target="_blank" class="btn btn-git"><i class="fab fa-github"></i> Check Out My Work</a>
+    </div>
+</section>
+</main>
+
+<!-- footer -->        
+    <footer class="footer" id="footer">
+        <div class="row topline">
+                <div class="col-1-of-2">
+                <div class="footer_navigation">
+                    <p>Mobile: 0416 748 185</p>
+                    <ul class="footer-list">
+                    <li class=footer-item>
+                        <a href="https://github.com/marijeb" class=footer-link target="_blank" ><i class="fab fa-github" ></i></a></li>
+                    <li class=footer-item><a href="https://www.linkedin.com/in/marije-van-der-brugge-3547522" class=footer-link target="_blank" ><i class="fab fa-linkedin"></i></a></li>
+                    <li class=footer-item><a href="mailto:mvdbrugge@hotmail.com" class=footer-link><i class="far fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-1-of-2">
+                 <p class="footer_copyright">
+                     Designed by Marije van der Brugge inspired by other websites and with the support of a friend. Images are my own and from Unsplashed.
+                 </p>
+            </div>
+        </div>
+       </footer>
+  </body>
+</html>
