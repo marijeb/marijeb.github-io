@@ -54,10 +54,11 @@ body {
   padding: 30px 10px;
 }
 
-/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+/* When the height of the screen is less than 450 pixels, change the font-size of the links  */
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 14px;}
+    
 }
 
 /* Header  */
@@ -307,6 +308,7 @@ ul {font-size: 14px;
     }
 
     .column-mywork-right {
+        padding-top: 25px;
         width: 100%;
     }
 }
