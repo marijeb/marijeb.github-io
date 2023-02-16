@@ -3,167 +3,102 @@ html {
 }
 
 body {
-    font-family: "Arial", "Helvetica", sans-serif;
+    font-family: "Montserrat", sans-serif;
     padding-left: 8%;
     padding-right: 8%;
     margin: unset;
-    color: white;
-    background-color: #1B1B1B;
+    color: #1B1B1B;
+    background-color: white;
     height: 100%;
-    /* width: 84%; */
 }
 
-@media screen and (max-width: 620px) {
-    body {
-        padding-left: 11%;
-        padding-right: 11%;
-    }
-}
-  
+/* Sidebar with image  */
 
-/* Full Screen Menu */    
-
-/* The overlay (background) */
-.overlay { 
-  height: 100%;
-  width: 0;
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  background-color: black; /* Whitefallback color */
-  background-color: white; /* White w/opacity */
-  overflow-x: hidden; /* Disable horizontal scroll */
-  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+.bg-img {
+  /* The image used */
+    background-image: url("../img/brisbane.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
 }
 
-/* Position the content inside the overlay */
-.overlay-content {
-  position: relative;
-  top: 25%; /* 25% from the top */
-  width: 100%; /* 100% width */
-  text-align: center; /* Centered text/links */
-  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
-    
+ .sidenav{
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: gainsboro;
+    overflow-x: hidden;
 }
 
-/* The navigation links inside the overlay */
-.overlay a {
-  padding: 8px;
-  text-decoration: none;
-  font-size: 36px;
-  color: black;
-  display: block; /* Display block instead of inline */
-  transition: 0.3s; /* Transition effects on hover (color) */
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    display: block;
 }
 
-/* When you mouse over the navigation links, change their color */
-.overlay a:hover, .overlay a:focus {
-  color: #e4e4e4;
+.sidenav a:hover {
+  color: lightsalmon;
 }
 
-/* Position the close button (top right corner) */
-.overlay .closebtn {
-  position: absolute;
-  top: 20px;
-  right: 45px;
-  font-size: 60px;
-}
 
-/* Position the open button*/
-.openbtn {
-    position: absolute;
-    top: 20px;
-    left: 10px;
-    font-size: 25px;
+.main {
+  margin-left: 160px; 
+  font-size: 28px; 
+  padding: 30px 10px;
 }
 
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
 @media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-  }
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 14px;}
 }
 
-/* Header */
-.header {
-    background-image: linear-gradient(rgba(253,248,248, 0),rgba(253,248,248)),
-    url(../img/brisbane02.jpg);
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;   
-    border-radius: 10px 10px 10px 10px;
-    clip-path: polygon(0 0, 100% 0%, 100% 91%, 0% 100%);}
-
-
-.header_text-box {
+/* Header  */
+.center {
     text-align: center;
-    color: white;
-    padding-top: 5em;
-    padding-bottom:10em;}
-    
-.heading-primary_main {
+    padding: 20px 8px 6px 16px;
+}
+.header {
     font-size: 30px;
-    font-weight: 700;
+    color: black;
     display: block;
-    margin-left: auto;
-    margin-right: auto;  
-    width: 15em;
-    padding-top: 1m;
-    padding-bottom: 1em}
-        
-.heading-primary_sub {
-    font-size: 30px;
-    font-weight: 700;
-    display: block;      
-    margin-left: auto;
-    margin-right: auto;
-    width: 15em;
-    padding-bottom: 2.5em;}
-
-@media screen and (max-width: 620px) {
-    .heading-primary_main, 
-    .heading-primary_sub {
-        width: unset;
+    font-weight: bold;
     }
+
+.title {
+    font-size: 18px;
+    color: black;
+    display: block;
+    font-weight: bold;
+    padding-bottom: 20px;
 }
 
-/* section About Me */
+/* section About  */
 
 .heading_secondary {
-    font-size: 1.5em;
+    font-size: 22px;
     text-transform: uppercase;
-    display: inline-block;}
+    font-weight: bold;
+    }
     
-.heading-secondary_bold {
-    font-size: 2em;
-    font-family: cursive;
-    font-weight: 900;}
 
 .heading_tertiary {
-    font-size: 1.2em;
-    font-weight: 700; }
+    font-size: 18px; }
 
-.profile_summary {
-    font-size: 1.1rem;
+.summary {
+    font-size: 18px;
     margin-bottom: 2em;
     text-align: left;}
 
-.u-center-text {
-    text-align: center; }
 
-.u-margin-bottom-big {
-    margin-bottom: 1rem; }
 
-.u-margin-bottom-small {
-    margin-bottom: 0.1rem; }
-
-.section-about {
-  padding: 10rem 0;
-    }
 
 /* profile summary  - two columns side by side */
 
@@ -178,20 +113,21 @@ body {
 
 .column_right {
     vertical-align: top;
-    margin: -50px 0px 0 0;
     width: 35%;
 }
 
 .column_right img {
     width: 100%;
+    border-radius: 50%;
 }
 
 /* Display the columns below each other instead of side by side on small screens */
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 450px) {
     .column_summary {
         width: 100%;
         display: flex;
         flex-flow: row wrap;
+        left: 31px;
     }
 
     .column_left {
@@ -203,12 +139,6 @@ body {
     }
 }
 
-/* icon */
-.fas {
-    font-size:48px;
-    color:whitesmoke;
-}
-
 .row:after {
   content: "";
   display: table;
@@ -216,180 +146,179 @@ body {
 
 
 /* Section Project */
-.section-project {
-    padding: 10em 2em;
-    margin-top: -5em;}
 
-/* Three columns side by side */
-.column {
-    float: left;
-    width: 30%;
-    margin-bottom: 40px;
-    padding: 0 8px;
-    }
+.timeline-period {
+		font-size: 18px;
+        font-weight: bold;
+		text-align: center;
+} 
 
-.row > [class^="col"]:not(:last-child) {
-    margin-right: 20px;}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+.timeline-heading {
+    font-size: 16px;
+    font-weight: bold;
 }
 
-/* Display the columns below each other instead of side by side on small screens */
-@media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
-    display: block;}}
-
-.front_card_title {
-    font-weight: 800;
-    color: black;
-    letter-spacing: 0.5m}
-
-.front_card_sub_title {
-    font-size: 1em;
-    font-weight: 800;
-    letter-spacing: 0.5m;
-    color: black;}
-
-.back_card_sub_title {
-    font-size: 1em;
-    font-weight: 800;
-    letter-spacing: 0.5m;
-    color: black;}
-
-.front_card_text {
-    color: black;
-    padding: 12px;}
-
-.back_card_title {
-    font-weight: 800;
-    color: black;}
-
-/* The flip card container - set the width and height to whatever you want. */
-.flip-card {
-    max-width: 280px;
-    height: 23rem;
-    perspective: 1000px;  /*Remove this if you don't want the 3D effect */
-    margin: auto;
-    background-color: currentColor;
-    border-radius: 5px;
-    transition: all 1s ease;}
-
-/* This container is needed to position the front and back side */
-.flip-card-inner {
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
+.timeline-summary{
+    font-size: 14px;
     }
 
-/* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-    box-shadow: 0 10vw 10vw -6vw rgb(203,203,203);}
-
-/* Position the front and back side */
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
-  backface-visibility: hidden; }
-
-/* Style the front side */
-.flip-card-front {
-    background-color: white}
-
-/* Style the back side */
-.flip-card-back {
-    background-color: white;
-    color: black;
-    transform: rotateY(180deg);
-}
-
-/* Clear floats */
-.flip-card-inner::after, .row::after {
-  content: "";
-  clear: both;
-  display: table;}
-
-.card_details ul {
-    list-style: none;
-    width: 80%;
-    margin:auto;
-    text-align: center;
-    font-size: 1rem;
-    padding: 1rem;}
-
-.card_details li:not(:last-child) {
-  margin-bottom: .5rem;
-  padding-bottom: .5rem;
-  border-bottom: 1px solid black /*#ffffff*/;}
-
-.u-margin-top-hug {
-    padding-top: 2em;
-    padding-bottom: 5em}
-    
-/* Footer  */    
-.footer {
-    color: white;
-    font-size: 0.8em;
-    padding-top: 2em;
-    padding-right: 5px;
-    padding-bottom: 2em;
-    padding-left: 10px;
-    border-radius: 10px;}
-
-.topline {
-    border-top; 
-    border-top-width: 1px;
-    border-top-style: solid;
-    border-top-color: white;
-    padding-top: 0.8em;}
-
-.footer_copyright {
-    text-align: right;}
-
-.footer_navigation {
+ul {font-size: 14px;
+    margin-bottom: 1em;
     text-align: left;
-}
-
- /* columns footer  */
-.col-1-of-2 {
-    width: calc((100% - 6em) / 2);
-    display: inline-block;}
-
-.row > [class^="col-"]:not(:last-child) {
-    margin-right: 60px;}
-
-.footer-list {
-    list-style: none;}
-
-.footer-item{
-    display:inline-block;
-    padding: 0.1rem;
-    text-align:left;
     }
 
-.footer-link:link, .footer-link:visited {
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    display: inline-block;
+
+/* timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: grey;
+    top: 0;
+    bottom: 0;
+    left: 10%;
+    margin-left: -10px
+}
+
+
+/* Container around content */
+.container {
+  padding: 8px 30px;
+  position: relative;
+  background-color: white;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: -23px;
+  background-color: grey;
+  border: 4px solid grey;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+ 
+/* The timeline period on the timeline */
+.timeline-period{   
+		width: 25px;
+        height: 25px;
+        top: 15px;
+        left: -25%;
+		position: absolute;
+        } 
+
+
+/* Place the container to the left */
+.container {
+  left: 10%;
+}
+
+
+/* Make sure that all arrows are pointing leftwards  */
+.container::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 20px;
+    width: 0;
+    z-index: 1;
+    left: 20px;
+    border: medium solid grey;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent grey transparent transparent;
+  }
+
+
+/* The actual content */
+.content {
+  padding: 2px 16px;
+  background-color: gainsboro;
+  position: relative;
+  border-radius: 6px;
+}
+
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+/* Place the timelime to the left */
+  .timeline::after {
+      left: 31px;}
+
+
+/* Full-width containers */
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;}
+
+/* Make sure all circles are at the same spot */
+  .container::after {
+    left: 15px;}
+    
+
+/* Make timeline period is on the left side */
+   
+.timeline-period::before{   
+		width: 25px;
+        height: 25px;
+        top: 15px;
+        left: -25%;
+		position: absolute;} 
+    
+}
+
+/* Section Contact */
+
+.section-contact {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    font-size: 18px;
+}
+
+.margin-right {
+    margin-right: 16px;
+        color: gray;
 }
 
     
-/* Clear floats after the columns */
-.row1:after {
-  content: "";
-  display: table;
-  clear: both;
+.contact-details {
+        font-size: 18px;
+    }
+        
+
+/* Section Footer */
+
+.footer {
+    text-align: center;
+    background-color: gainsboro;
+    padding-top:30px;
+    padding-bottom:30px;
+    margin:-24px;
 }
+
+.fab {
+    color: gray;
+    
+}
+
+.footer-copyright{
+    font-size: 10px;
+    padding-top:40px;
+}
+
+
 
 /* Buttons and Links  */
 /* buttons */
@@ -401,33 +330,24 @@ body {
     display: inline-block;
     border-radius: 10em;
     position: relative;
-    font-size: 1em;
+    font-size: 18px;
     border: none;
     cursor: pointer;}
 
 .btn-download {
-    background-color: white; 
+    padding:12px 24px;
+    vertical-align:middle;
+    overflow:hidden;
+    text-align:center;
+    cursor:pointer;
+    white-space:nowrap;
+    background-color: #D3D3D3; 
     color:  black;
-    font-weight: 600;
-    font-size: 0.8em;
-    text-decoration: none;
-    padding: 1em 1em;
-    display: inline-block;
-    border-radius: 10em;
-    position: relative;
-    border: none;
-    cursor: pointer;}
+    font-weight: bold;
+    font-size: 16px;
+    margin-top:20px;
+    margin-right: 2px;}
 
-.btn-git {
-    background-color: white; 
-    color: black;
-    font-weight: 600;
-    font-size: 1em;}
-
-.btn-white {
-    background-color: white;
-    color: black;
-    font-weight: 700;}
 
 /* links */
 a {text-decoration: none;}
@@ -436,5 +356,9 @@ a:link {color:black;}
 
 a.btn-download:link {color:black;}
 
+/* opacity */
+ .opacity{
+    opacity:0.40
+}
 
 
