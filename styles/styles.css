@@ -279,6 +279,43 @@ ul {font-size: 14px;
     
 }
 
+/* Section My Work */
+.column-mywork {
+    display: flex;
+    flex-flow: row wrap;
+    padding-top:30px;
+}
+.column-mywork-left {
+    width: 50%;
+}
+
+.column-mywork-right {
+    width: 50%;
+}
+        
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 450px) {
+    .column-mywork {
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        left: 31px;
+    }
+
+    .column-mywork-left {
+        width: 100%;
+    }
+
+    .column-mywork-right {
+        width: 100%;
+    }
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;}
+
 /* Section Contact */
 
 .section-contact {
@@ -297,19 +334,7 @@ ul {font-size: 14px;
         font-size: 18px;
     }
 
-.column-contact {
-    display: flex;
-    flex-flow: row wrap;
-    padding-top:30px;
-}
-.column-contact-left {
-    width: 50%;
-}
 
-.column-contact-right {
-    width: 50%;
-}
-        
 
 /* Section Footer */
 
@@ -372,6 +397,7 @@ ul {font-size: 14px;
     font-weight: bold;
     font-size: 16px;
     margin-top:20px;
+
 }
 
 
