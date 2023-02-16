@@ -296,6 +296,19 @@ ul {font-size: 14px;
 .contact-details {
         font-size: 18px;
     }
+
+.column-contact {
+    display: flex;
+    flex-flow: row wrap;
+    padding-top:30px;
+}
+.column-contact-left {
+    width: 50%;
+}
+
+.column-contact-right {
+    width: 50%;
+}
         
 
 /* Section Footer */
@@ -308,15 +321,13 @@ ul {font-size: 14px;
     margin:-24px;
 }
 
-.fab {
-    color: gray;
-    
-}
+
 
 .footer-copyright{
     font-size: 10px;
     padding-top:40px;
 }
+
 
 
 
@@ -346,7 +357,22 @@ ul {font-size: 14px;
     font-weight: bold;
     font-size: 16px;
     margin-top:20px;
-    margin-right: 2px;}
+    margin-right: 2px;
+}
+
+.btn-git {
+    padding:12px 24px;
+    vertical-align:middle;
+    overflow:hidden;
+    text-align:center;
+    cursor:pointer;
+    white-space:nowrap;
+    background-color: #D3D3D3; 
+    color:  black;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top:20px;
+}
 
 
 /* links */
@@ -355,6 +381,19 @@ a {text-decoration: none;}
 a:link {color:black;}
 
 a.btn-download:link {color:black;}
+
+a.btn.git:link {color:black;}
+
+/* links */
+
+.fab {
+    color: gray;
+    
+}
+
+.fa-github {
+    color: black;
+}
 
 /* opacity */
  .opacity{
