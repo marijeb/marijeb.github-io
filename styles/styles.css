@@ -285,8 +285,8 @@ ul {font-size: 14px;
     padding-left: 25px;
     padding-right: 25px;}
 
-/* remove circles and arrows */
-  .container::after {
+/* hide circles and arrows */
+    .container::after {
     display: none;}
     
     .container::before {
